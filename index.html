@@ -237,4 +237,414 @@
         </div>
 
         <!-- Mockup telefono -->
-        <div
+        <div class="reveal relative mx-auto w-full max-w-[340px]">
+          <div class="orb-halo absolute -inset-16 -z-10 opacity-70"></div>
+          <div class="relative rounded-[2.8rem] border border-line bg-gradient-to-b from-white to-[#ECE8F8] p-3 shadow-2xl shadow-violet/20">
+            <div class="rounded-[2.2rem] bg-night px-5 pb-6 pt-4">
+              <div class="mx-auto mb-5 h-6 w-28 rounded-full bg-surface"></div>
+
+              <div class="flex items-center justify-between">
+                <div>
+                  <p class="text-xs text-muted">Giovedì sera</p>
+                  <p class="font-display text-xl">Ciao, Sara</p>
+                </div>
+                <span class="relative grid h-10 w-10 place-items-center"><span class="orb absolute inset-0"></span></span>
+              </div>
+
+              <!-- Dashboard emozionale -->
+              <div class="mt-5 rounded-2xl border border-line bg-surface p-4">
+                <div class="flex items-center justify-between text-xs text-muted">
+                  <span>Il tuo stato oggi</span><span>ultime 12 h</span>
+                </div>
+                <svg viewBox="0 0 260 90" class="wave mt-3 w-full" aria-hidden="true">
+                  <defs>
+                    <linearGradient id="wg" x1="0" x2="1">
+                      <stop offset="0" stop-color="#5EE6C1"/><stop offset=".55" stop-color="#8B7CF6"/><stop offset="1" stop-color="#FFB48A"/>
+                    </linearGradient>
+                  </defs>
+                  <path d="M0 62 C 30 58, 45 66, 70 56 S 115 40, 140 50 S 185 70, 205 38 S 240 14, 260 20" fill="none" stroke="url(#wg)" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+                <div class="mt-3 flex gap-2 text-[11px]">
+                  <span class="rounded-full bg-mint/15 px-2.5 py-1 text-mint">Calma</span>
+                  <span class="rounded-full bg-violet/15 px-2.5 py-1 text-violet">Concentrazione</span>
+                  <span class="rounded-full bg-peach/15 px-2.5 py-1 text-peach">Stress ↑</span>
+                </div>
+              </div>
+
+              <!-- Notifica Safety Plan -->
+              <div class="mt-4 rounded-2xl border border-peach/30 bg-gradient-to-br from-peach/15 to-violet/10 p-4">
+                <p class="text-sm font-medium">Il tuo stress sta salendo.</p>
+                <p class="mt-1 text-xs text-muted">Vuoi attivare il Safety Plan?</p>
+                <div class="mt-3 grid grid-cols-2 gap-2 text-xs font-semibold">
+                  <span class="rounded-xl bg-light py-2 text-center text-ink">Attiva</span>
+                  <span class="rounded-xl border border-line py-2 text-center text-muted">Respira con me</span>
+                </div>
+              </div>
+
+              <!-- Contatti fidati -->
+              <div class="mt-4 flex items-center justify-between rounded-2xl border border-line bg-surface p-3">
+                <div class="flex -space-x-2">
+                  <span class="grid h-8 w-8 place-items-center rounded-full border-2 border-surface bg-violet text-[11px] font-semibold text-white">M</span>
+                  <span class="grid h-8 w-8 place-items-center rounded-full border-2 border-surface bg-peach text-[11px] font-semibold text-ink">L</span>
+                  <span class="grid h-8 w-8 place-items-center rounded-full border-2 border-surface bg-mint text-[11px] font-semibold text-white">G</span>
+                </div>
+                <span class="text-xs text-muted">3 contatti fidati</span>
+                <span class="rounded-full bg-coral px-3 py-1.5 text-[11px] font-bold text-white">SOS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRINCIPI (social proof onesta) ============ -->
+    <section aria-label="I nostri principi" class="border-y border-line bg-surface/40 py-8">
+      <p class="mb-6 text-center text-xs font-medium uppercase tracking-[0.2em] text-muted">Costruita su principi che contano</p>
+      <div class="relative overflow-hidden [mask-image:linear-gradient(90deg,transparent,#000_12%,#000_88%,transparent)]">
+        <div class="marquee flex w-max gap-14 whitespace-nowrap font-display text-xl text-ink/80 sm:text-2xl">
+          <template x-data x-for="n in 2">
+            <div class="flex gap-14">
+              <span>Privacy by design</span><span class="text-violet">✦</span>
+              <span>Nessuna pubblicità, nessuna vendita di dati</span><span class="text-peach">✦</span>
+              <span>AI etica, non predatoria</span><span class="text-mint">✦</span>
+              <span>Nessun dispositivo extra</span><span class="text-violet">✦</span>
+              <span>Human + Tech</span><span class="text-peach">✦</span>
+              <span>Le 101 emozioni</span><span class="text-mint">✦</span>
+            </div>
+          </template>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROBLEMA vs SOLUZIONE ============ -->
+    <section id="problema" class="scroll-mt-20 py-24 sm:py-32">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6">
+        <div class="reveal max-w-2xl">
+          <p class="text-sm font-medium uppercase tracking-[0.16em] text-peach">Il problema</p>
+          <h2 class="mt-4 font-display text-4xl font-light leading-tight sm:text-5xl">
+            La tecnologia conta i tuoi passi.<br /><span class="text-muted">Non come stai.</span>
+          </h2>
+        </div>
+
+        <div class="mt-16 grid gap-6 lg:grid-cols-2">
+          <!-- Problemi -->
+          <div class="reveal rounded-3xl border border-line bg-surface/50 p-8">
+            <p class="mb-6 text-xs font-semibold uppercase tracking-[0.18em] text-muted">Oggi</p>
+            <ul class="space-y-7">
+              <li class="flex gap-4">
+                <span class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-coral/10 text-coral">
+                  <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8Z" stroke-linejoin="round"/></svg>
+                </span>
+                <div>
+                  <h3 class="font-medium">Le emozioni arrivano senza preavviso</h3>
+                  <p class="mt-1 text-sm leading-relaxed text-muted">Sul tram, in ufficio, di notte. E nel momento in cui servirebbe lucidità, ce n'è meno.</p>
+                </div>
+              </li>
+              <li class="flex gap-4">
+                <span class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-coral/10 text-coral">
+                  <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6" stroke-linecap="round"/><path d="m16 16 5 5m0-5-5 5" stroke-linecap="round"/></svg>
+                </span>
+                <div>
+                  <h3 class="font-medium">Quando hai bisogno, nessuno lo sa</h3>
+                  <p class="mt-1 text-sm leading-relaxed text-muted">Chiedere aiuto è difficile proprio nel momento peggiore. E la paura che nessuno se ne accorga resta.</p>
+                </div>
+              </li>
+              <li class="flex gap-4">
+                <span class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-coral/10 text-coral">
+                  <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10 18h4" stroke-linecap="round"/></svg>
+                </span>
+                <div>
+                  <h3 class="font-medium">Le app ti misurano, non ti proteggono</h3>
+                  <p class="mt-1 text-sm leading-relaxed text-muted">Fitness, meditazione, sicurezza: strumenti separati, nessuno che colleghi come ti senti a cosa fare.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Soluzioni -->
+          <div class="reveal relative overflow-hidden rounded-3xl border border-violet/30 bg-gradient-to-br from-violet/15 via-surface to-peach/10 p-8">
+            <div class="orb-halo absolute -right-24 -top-24 h-72 w-72 opacity-60"></div>
+            <p class="relative mb-6 text-xs font-semibold uppercase tracking-[0.18em] text-light">Con Elsmy</p>
+            <ul class="relative space-y-7">
+              <li class="flex gap-4">
+                <span class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-mint/15 text-mint">
+                  <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M3 17c3-6 5-6 7-2s4 4 6-2 3-6 5-4" stroke-linecap="round"/></svg>
+                </span>
+                <div>
+                  <h3 class="font-medium">Dashboard emozionale</h3>
+                  <p class="mt-1 text-sm leading-relaxed text-muted">Una breve registrazione vocale e Elsmy dà un nome a quello che senti. Giorno dopo giorno, vedi i tuoi pattern.</p>
+                </div>
+              </li>
+              <li class="flex gap-4">
+                <span class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-mint/15 text-mint">
+                  <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6l-8-3Z" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <div>
+                  <h3 class="font-medium">Safety Plan personale<span class="ml-2 inline-block rounded-full border border-peach/40 px-2 py-0.5 align-middle text-[10px] font-semibold uppercase tracking-wider text-peach">In sviluppo</span></h3>
+                  <p class="mt-1 text-sm leading-relaxed text-muted">Avvisa i tuoi contatti fidati e condivide la posizione, quando lo decidi tu.</p>
+                </div>
+              </li>
+              <li class="flex gap-4">
+                <span class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-mint/15 text-mint">
+                  <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10Z" stroke-linejoin="round"/></svg>
+                </span>
+                <div>
+                  <h3 class="font-medium">Un'AI che supporta, non sostituisce</h3>
+                  <p class="mt-1 text-sm leading-relaxed text-muted">Tecnologia al servizio delle persone che ami. I tuoi dati restano tuoi.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ COME FUNZIONA ============ -->
+    <section id="come-funziona" class="scroll-mt-20 relative overflow-hidden bg-surface/30 py-24 sm:py-32">
+      <div class="stars absolute inset-0 -z-10 opacity-60"></div>
+      <div class="mx-auto max-w-6xl px-4 sm:px-6">
+        <div class="reveal mx-auto max-w-2xl text-center">
+          <p class="text-sm font-medium uppercase tracking-[0.16em] text-peach">Come funziona</p>
+          <h2 class="mt-4 font-display text-4xl font-light leading-tight sm:text-5xl">Quattro gesti. <span class="text-light italic">Un nome.</span></h2>
+          <p class="mt-5 text-muted">Basta il tuo smartphone: nessun dispositivo da comprare, nessun braccialetto da indossare.</p>
+        </div>
+
+        <ol class="relative mt-20 grid gap-10 md:grid-cols-4 md:gap-6">
+          <div class="absolute left-0 right-0 top-7 hidden h-px bg-gradient-to-r from-transparent via-line to-transparent md:block" aria-hidden="true"></div>
+
+          <li class="reveal relative text-center">
+            <span class="relative mx-auto grid h-14 w-14 place-items-center rounded-full border border-line bg-night font-display text-xl text-violet">1</span>
+            <h3 class="mt-6 font-display text-xl">Crea il tuo Safety Plan</h3>
+            <span class="mt-2 inline-block rounded-full border border-peach/40 px-2 py-0.5 align-middle text-[10px] font-semibold uppercase tracking-wider text-peach">In sviluppo</span>
+            <p class="mt-2 text-sm leading-relaxed text-muted">Contatti fidati, luoghi sicuri, cosa ti aiuta davvero a stare meglio.</p>
+          </li>
+          <li class="reveal relative text-center" style="transition-delay:.1s">
+            <span class="relative mx-auto grid h-14 w-14 place-items-center rounded-full border border-line bg-night font-display text-xl text-violet">2</span>
+            <h3 class="mt-6 font-display text-xl">Fai check-in in 10 secondi</h3>
+            <p class="mt-2 text-sm leading-relaxed text-muted">Registra pochi secondi di voce o scrivi una nota: Elsmy riconosce l'emozione dal tono.</p>
+          </li>
+          <li class="reveal relative text-center" style="transition-delay:.2s">
+            <span class="relative mx-auto grid h-14 w-14 place-items-center rounded-full border border-line bg-night font-display text-xl text-peach">3</span>
+            <h3 class="mt-6 font-display text-xl">Elsmy nota il cambiamento</h3>
+            <p class="mt-2 text-sm leading-relaxed text-muted">Riconosce quando lo stress sale, prima che diventi una giornata "no".</p>
+          </li>
+          <li class="reveal relative text-center" style="transition-delay:.3s">
+            <span class="relative mx-auto grid h-14 w-14 place-items-center rounded-full bg-light font-display text-xl text-ink shadow-lg shadow-peach/30">4</span>
+            <h3 class="mt-6 font-display text-xl">Ritrovi la calma</h3>
+            <span class="mt-2 inline-block rounded-full border border-peach/40 px-2 py-0.5 align-middle text-[10px] font-semibold uppercase tracking-wider text-peach">In sviluppo</span>
+            <p class="mt-2 text-sm leading-relaxed text-muted">Calma guidata, avviso ai tuoi contatti, posizione condivisa. Tu scegli cosa.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ PRICING ============ -->
+    <section id="prezzi" class="scroll-mt-20 py-24 sm:py-32">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6">
+        <div class="reveal mx-auto max-w-2xl text-center">
+          <p class="text-sm font-medium uppercase tracking-[0.16em] text-peach">Prezzi</p>
+          <h2 class="mt-4 font-display text-4xl font-light leading-tight sm:text-5xl">Inizia gratis.<br /><span class="text-muted">Cresci quando vuoi.</span></h2>
+          <p class="mt-5 text-muted">Durante la beta l'accesso è gratuito. I beta tester avranno condizioni dedicate al lancio.</p>
+        </div>
+
+        <div class="mt-16 grid gap-6 lg:grid-cols-3">
+          <!-- Free -->
+          <div class="reveal flex flex-col rounded-3xl border border-line bg-surface/50 p-8">
+            <h3 class="font-display text-2xl">Elsmy Free</h3>
+            <p class="mt-1 text-sm text-muted">Per iniziare a conoscerti</p>
+            <p class="mt-6"><span class="font-display text-5xl">€0</span><span class="text-muted"> / per sempre</span></p>
+            <ul class="mt-8 flex-1 space-y-3 text-sm">
+              <li class="flex gap-3"><span class="text-mint">✓</span>Riconoscimento delle emozioni</li>
+            </ul>
+            <a href="#beta" class="mt-10 rounded-full border border-line py-3 text-center font-semibold transition hover:border-violet hover:bg-violet/10">Inizia gratis</a>
+          </div>
+
+          <!-- Base -->
+          <div class="reveal relative flex flex-col rounded-3xl border border-violet/50 bg-gradient-to-b from-violet/20 to-surface p-8 shadow-2xl shadow-violet/20 lg:-translate-y-4" style="transition-delay:.1s">
+            <span class="absolute -top-3.5 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-light px-4 py-1 text-xs font-bold uppercase tracking-wider text-ink">Consigliato</span>
+            <h3 class="font-display text-2xl">Elsmy Base</h3>
+            <p class="mt-1 text-sm text-muted">Per seguire il tuo percorso</p>
+            <p class="mt-6"><span class="font-display text-5xl">€9,99</span><span class="text-muted"> / mese</span></p>
+            <ul class="mt-8 flex-1 space-y-3 text-sm">
+              <li class="flex gap-3"><span class="text-mint">✓</span>Tutto di Elsmy Free</li>
+              <li class="flex gap-3"><span class="text-mint">✓</span><span><strong class="font-medium">Emotional tracker</strong> con storico e pattern</span></li>
+              <li class="flex gap-3"><span class="text-mint">✓</span>Suggerimenti e link dedicati al tuo stato</li>
+            </ul>
+            <a href="#beta" class="mt-10 rounded-full bg-light py-3 text-center font-semibold text-ink transition hover:brightness-110">Prenota il tuo posto</a>
+          </div>
+
+          <!-- Premium -->
+          <div class="reveal flex flex-col rounded-3xl border border-line bg-surface/50 p-8" style="transition-delay:.2s">
+            <h3 class="font-display text-2xl">Elsmy Premium</h3>
+            <p class="mt-1 text-sm text-muted">Per conoscere ogni sfumatura</p>
+            <p class="mt-6"><span class="font-display text-5xl">€19,99</span><span class="text-muted"> / mese</span></p>
+            <ul class="mt-8 flex-1 space-y-3 text-sm">
+              <li class="flex gap-3"><span class="text-mint">✓</span>Tutto di Elsmy Base</li>
+              <li class="flex gap-3"><span class="text-mint">✓</span><span>Accesso a <strong class="font-medium">Elsmy Channel</strong>, i contenuti sulle 101 emozioni<span class="ml-2 inline-block rounded-full border border-peach/40 px-2 py-0.5 align-middle text-[10px] font-semibold uppercase tracking-wider text-peach">In arrivo</span></span></li>
+            </ul>
+            <a href="#beta" class="mt-10 rounded-full border border-line py-3 text-center font-semibold transition hover:border-peach hover:bg-peach/10">Prenota il tuo posto</a>
+          </div>
+        </div>
+
+        <!-- B2B -->
+        <div class="reveal mt-8 flex flex-col items-start justify-between gap-6 rounded-3xl border border-line bg-surface/40 p-8 md:flex-row md:items-center">
+          <div>
+            <h3 class="font-display text-2xl">Per le aziende</h3>
+            <p class="mt-2 max-w-xl text-sm leading-relaxed text-muted">Un progetto pilota per il benessere dei tuoi dipendenti: meno stress, dati aggregati e anonimi, nessuna sorveglianza.</p>
+          </div>
+          <div class="flex shrink-0 flex-col items-start gap-2 md:items-end">
+            <a href="mailto:ciao@elsmy.app?subject=Progetto%20pilota%20Elsmy" class="rounded-full border border-violet px-6 py-3 font-semibold transition hover:bg-violet/15">Parliamone</a>
+            <span class="select-all text-sm text-muted">ciao@elsmy.app</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRIVACY / FAQ ============ -->
+    <section id="privacy" class="scroll-mt-20 border-t border-line py-24 sm:py-28">
+      <div class="mx-auto grid max-w-6xl gap-12 px-4 sm:px-6 lg:grid-cols-[.8fr_1.2fr]">
+        <div class="reveal">
+          <p class="text-sm font-medium uppercase tracking-[0.16em] text-peach">Privacy</p>
+          <h2 class="mt-4 font-display text-4xl font-light leading-tight">"Non mi fido a scrivere delle mie emozioni su un'app."</h2>
+          <p class="mt-5 text-muted">Hai ragione a chiedertelo. Ecco cosa facciamo con i tuoi dati.</p>
+        </div>
+
+        <div class="reveal space-y-3" x-data="{ open: 0 }">
+          <template x-for="(item, i) in [
+            { q: 'Chi può vedere le mie emozioni?', a: 'Le tue emozioni servono a te, non a chi fa pubblicità. Gli avvisi ai contatti fidati, in arrivo con il Safety Plan, partiranno solo se li attivi tu.' },
+            { q: 'I miei dati vengono venduti o usati per pubblicità?', a: 'No. Mai. Elsmy non vende dati e non fa profilazione pubblicitaria: il modello si regge sugli abbonamenti.' },
+            { q: 'Posso cancellare tutto?', a: 'Sì. Puoi eliminare le tue registrazioni e le tue note quando vuoi. Per qualsiasi richiesta sui tuoi dati, scrivici e cancelliamo tutto.' },
+            { q: 'Elsmy sostituisce uno psicologo?', a: 'No. Elsmy ti aiuta a riconoscere e gestire le emozioni nel quotidiano, ma non è un dispositivo medico e non sostituisce un professionista.' }
+          ]" :key="i">
+            <div class="rounded-2xl border border-line bg-surface/50">
+              <button @click="open = open === i ? -1 : i" class="flex w-full items-center justify-between gap-4 px-6 py-5 text-left font-medium" :aria-expanded="open === i">
+                <span x-text="item.q"></span>
+                <span class="text-xl text-violet transition" :class="open === i && 'rotate-45'">+</span>
+              </button>
+              <div x-show="open === i" x-collapse.duration.300ms x-transition.opacity class="px-6 pb-5 text-sm leading-relaxed text-muted" x-text="item.a"></div>
+            </div>
+          </template>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA FINALE ============ -->
+    <section class="relative isolate overflow-hidden py-24 sm:py-32">
+      <div class="orb-halo absolute left-1/2 top-1/2 -z-10 h-[700px] w-[700px] -translate-x-1/2 -translate-y-1/2"></div>
+      <div class="reveal mx-auto max-w-2xl px-4 text-center sm:px-6">
+        <h2 class="font-display text-4xl font-light leading-tight sm:text-6xl">Aiutaci a costruirla <span class="text-light italic">con te.</span></h2>
+        <p class="mt-6 text-lg text-muted">Cerchiamo le prime persone che vogliono provare Elsmy e dirci, con sincerità, cosa funziona e cosa no.</p>
+
+        <form x-data="leadForm()" @submit.prevent="submit" class="mx-auto mt-10 max-w-lg" novalidate>
+          <div x-show="!sent" class="glass flex flex-col gap-2 rounded-2xl p-2 sm:flex-row">
+            <label for="email-cta" class="sr-only">La tua email</label>
+            <input id="email-cta" type="email" x-model="email" required placeholder="La tua email"
+                   class="min-w-0 flex-1 rounded-xl bg-transparent px-4 py-3.5 text-ink placeholder:text-muted/70 outline-none focus:ring-2 focus:ring-violet/60" />
+            <button type="submit" :disabled="loading" class="rounded-xl bg-light px-6 py-3.5 font-semibold text-ink transition hover:brightness-110 disabled:opacity-60">
+              <span x-text="loading ? 'Un attimo…' : 'Entra nella beta'"></span>
+            </button>
+          </div>
+          <p x-show="error" x-cloak x-text="error" class="mt-3 text-sm text-coral"></p>
+          <div x-show="sent" x-cloak x-transition class="glass rounded-2xl p-5"><p class="font-display text-xl">Grazie, ci sentiamo presto ✦</p>
+            <a x-show="hasSurvey" :href="surveyUrl" target="_blank" rel="noopener" class="mt-4 inline-block rounded-full bg-light px-5 py-2.5 text-sm font-semibold text-ink">Compila il questionario (2 min)</a></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="border-t border-line py-12">
+    <div class="mx-auto flex max-w-6xl flex-col gap-8 px-4 sm:px-6 md:flex-row md:items-start md:justify-between">
+      <div>
+        <a href="#top" class="flex items-center gap-2.5">
+          <span class="relative grid h-7 w-7 place-items-center"><span class="orb absolute inset-0"></span></span>
+          <span class="wordmark text-2xl leading-none">Elsmy</span>
+        </a>
+        <p class="mt-3 text-sm text-muted">Ogni emozione merita un nome</p>
+      </div>
+      <div class="flex flex-wrap gap-6 text-sm text-muted">
+        <a href="#privacy" class="hover:text-ink">Privacy</a>
+        <span class="select-all">ciao@elsmy.app</span>
+        <a href="#prezzi" class="hover:text-ink">Prezzi</a>
+      </div>
+    </div>
+    <div class="mx-auto mt-10 max-w-6xl border-t border-line px-4 pt-6 text-xs leading-relaxed text-muted/80 sm:px-6">
+      <p>Elsmy non è un dispositivo medico e non sostituisce un professionista della salute mentale. <strong class="text-ink">In caso di emergenza chiama il 112.</strong></p>
+      <p class="mt-2">© 2026 Elsmy. Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+
+  <script>
+    /* ============================================================
+       RACCOLTA EMAIL
+       Sostituisci FORM_ENDPOINT con il tuo endpoint Formspree
+       (es. https://formspree.io/f/abcd1234). Finché resta il
+       segnaposto, il form mostra il messaggio di conferma ma
+       NON salva l'email.
+       ============================================================ */
+    const FORM_ENDPOINT = 'https://formspree.io/f/IL_TUO_ID';
+
+    /* Link al questionario v2 (Google Forms / Typeform).
+       Finché resta il segnaposto, il pulsante non compare. */
+    const QUESTIONARIO_URL = 'IL_TUO_LINK_QUESTIONARIO';
+
+    /* Google Analytics 4: incolla qui il tuo ID (es. G-ABC123XYZ).
+       Finché resta il segnaposto, nessun tracciamento. */
+    const GA_ID = 'G-IL_TUO_ID';
+
+    if (!GA_ID.includes('IL_TUO_ID')) {
+      const ga = document.createElement('script');
+      ga.async = true;
+      ga.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+      document.head.appendChild(ga);
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function () { dataLayer.push(arguments); };
+      gtag('js', new Date());
+      gtag('config', GA_ID, { anonymize_ip: true });
+    }
+    const track = (name, params) => { if (window.gtag) gtag('event', name, params); };
+
+    function leadForm() {
+      return {
+        email: '',
+        interest: 'personale',
+        loading: false,
+        sent: false,
+        error: '',
+        surveyUrl: QUESTIONARIO_URL,
+        hasSurvey: QUESTIONARIO_URL.startsWith('http'),
+        async submit() {
+          this.error = '';
+          if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(this.email)) {
+            this.error = 'Inserisci un indirizzo email valido.';
+            return;
+          }
+          this.loading = true;
+          try {
+            if (!FORM_ENDPOINT.includes('IL_TUO_ID')) {
+              const res = await fetch(FORM_ENDPOINT, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+                body: JSON.stringify({ email: this.email, interesse: this.interest, fonte: 'landing-elsmy' }),
+              });
+              if (!res.ok) throw new Error('send failed');
+            }
+            this.sent = true;
+            track('generate_lead', { interesse: this.interest });
+          } catch (e) {
+            this.error = 'Qualcosa non ha funzionato. Riprova tra poco.';
+          } finally {
+            this.loading = false;
+          }
+        },
+      };
+    }
+
+    /* Scroll reveal */
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); } });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+  </script>
+</body>
+</html>
