@@ -1,6 +1,6 @@
-# elsmy-landing# Elsmy — Landing page MVP
+# Elsmy — Landing page MVP
 
-Landing page di validazione per **Elsmy – My Emotional Light Security**: raccoglie email per la beta privata e distingue l'interesse personale da quello aziendale.
+Landing page di validazione per **Elsmy**, l’app che riconosce le emozioni dalla voce: raccoglie email per la beta privata e distingue l'interesse personale da quello aziendale.
 
 Progetto separato dall'app ([angelicasangregorio29/elsmy](https://github.com/angelicasangregorio29/elsmy)).
 
@@ -19,7 +19,7 @@ Nello stesso blocco di `index.html` trovi:
 - `GA_ID`: il tuo ID Google Analytics 4 (es. `G-ABC123XYZ`). Ogni iscrizione viene registrata come evento `generate_lead`, utile per misurare la conversione (KR4 ≥ 10%).
 
 ## Pubblicare online
-Settings → Pages → Branch `main` / root → Save. La pagina sarà su `https://angelicasangregorio29.github.io/elsmy-landing/`.
+Pubblicata con GitHub Pages su `https://angelicasangregorio29.github.io/elsmy-landing/`.
 
 ## Da personalizzare
 - Email di contatto `ciao@elsmy.app` (footer e sezione aziende)
